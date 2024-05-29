@@ -55,7 +55,7 @@ void ClinicaCRUD::CrudClinicas() {
     } while (choice != 5);
 }
 
-// Función que valida si ya existe la clínica para evitar redundancia de datos
+// Funciï¿½n que valida si ya existe la clï¿½nica para evitar redundancia de datos
 bool ClinicaCRUD::ValidarClinica(int codigo) {
     fstream archivo("Clinica.dat", ios::binary | ios::in | ios::out);
     if (!archivo) {
@@ -76,12 +76,12 @@ bool ClinicaCRUD::ValidarClinica(int codigo) {
     return encontrada;
 }
 
-// Aquí se agregan clínicas que son almacenadas
+// Aquï¿½ se agregan clï¿½nicas que son almacenadas
 void ClinicaCRUD::IngresarClinica() {
     string codigoPrograma = "5000";
     system("cls");
     cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
-    cout << "\n-------------------------------------------------Agregar Clínica--------------------------------------------" << endl;
+    cout << "\n-------------------------------------------------Agregar Sede--------------------------------------------" << endl;
     Clinica clinica;
     cout << "Ingrese el codigo de la sede donde trabajara: ";
     cin >> clinica.codigo;
@@ -95,7 +95,7 @@ void ClinicaCRUD::IngresarClinica() {
     cout << "Ingrese el nombre: ";
     cin.getline(clinica.nombre, 50);
 
-    cout << "Ingrese la dirección: ";
+    cout << "Ingrese la direcciï¿½n: ";
     cin.getline(clinica.direccion, 100);
 
     ofstream archivo("Clinica.dat", ios::binary | ios::app);
@@ -105,16 +105,16 @@ void ClinicaCRUD::IngresarClinica() {
     Bitacora Auditoria;
     string user, pass;
 
-    Auditoria.ingresoBitacora(user, codigoPrograma, "ICL"); // ICL = Insertar Clínica
+    Auditoria.ingresoBitacora(user, codigoPrograma, "ICL"); // ICL = Insertar Clï¿½nica
 
     cout << "Sede agregada exitosamente!" << endl;
 }
 
-// Modificar clínicas
+// Modificar clï¿½nicas
 void ClinicaCRUD::ModificarClinica() {
     string codigoPrograma = "5000";
     cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
-    cout << "\n-------------------------------------------------Modificacion de Clínicas--------------------------------------------" << endl;
+    cout << "\n-------------------------------------------------Modificacion de sedes--------------------------------------------" << endl;
     int codigo;
     cout << "Ingrese el codigo de la Sede a modificar: ";
     cin >> codigo;
@@ -133,7 +133,7 @@ void ClinicaCRUD::ModificarClinica() {
             cin.ignore();
             cin.getline(clinica.nombre, 50);
 
-            cout << "Ingrese la nueva dirección: ";
+            cout << "Ingrese la nueva direcciï¿½n: ";
             cin.getline(clinica.direccion, 100);
 
             archivo.seekp(-static_cast<int>(sizeof(Clinica)), ios::cur);
@@ -149,10 +149,10 @@ void ClinicaCRUD::ModificarClinica() {
     Bitacora Auditoria;
     string user, pass;
 
-    Auditoria.ingresoBitacora(user, codigoPrograma, "UCL"); // UCL = Update Clínica
+    Auditoria.ingresoBitacora(user, codigoPrograma, "UCL"); // UCL = Update Clï¿½nica
 
     if (!encontrada) {
-        cout << "No se encontró la Sede con el código ingresado." << endl;
+        cout << "No se encontrï¿½ la Sede con el cï¿½digo ingresado." << endl;
     } else {
         cout << "Sede modificada exitosamente!" << endl;
     }
@@ -162,7 +162,7 @@ void ClinicaCRUD::BorrarClinica() {
     string codigoPrograma = "5000";
     int codigo;
     cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
-    cout << "\n-------------------------------------------------Eliminar Clínicas--------------------------------------------" << endl;
+    cout << "\n-------------------------------------------------Eliminar sedes--------------------------------------------" << endl;
     cout << "Ingrese el codigo de la Sede a eliminar: ";
     cin >> codigo;
 
@@ -192,19 +192,19 @@ void ClinicaCRUD::BorrarClinica() {
     Bitacora Auditoria;
     string user, pass;
 
-    Auditoria.ingresoBitacora(user, codigoPrograma, "DCL"); // DCL = Delete Clínica
+    Auditoria.ingresoBitacora(user, codigoPrograma, "DCL"); // DCL = Delete Clï¿½nica
 
     if (eliminada) {
-        cout << "Clínica eliminada exitosamente!" << endl;
+        cout << "Clï¿½nica eliminada exitosamente!" << endl;
     } else {
-        cout << "No se encontró la sede con el código ingresado." << endl;
+        cout << "No se encontrï¿½ la sede con el cï¿½digo ingresado." << endl;
     }
 }
 
 void ClinicaCRUD::DesplegarClinica() {
     system("cls");
     string codigoPrograma = "5000";
-    cout << "-----------------Despliegue de clínicas registradas---------------------" << endl;
+    cout << "-----------------Despliegue de sedes registradas---------------------" << endl;
     ifstream archivo("Clinica.dat", ios::binary);
     if (!archivo) {
         cout << "No hay Sedes registradas." << endl;
@@ -224,7 +224,7 @@ void ClinicaCRUD::DesplegarClinica() {
     Bitacora Auditoria;
     string user, pass;
 
-    Auditoria.ingresoBitacora(user, codigoPrograma, "RCL"); // RCL = Read Clínica
+    Auditoria.ingresoBitacora(user, codigoPrograma, "RCL"); // RCL = Read Clï¿½nica
 
     cout << "Presione Enter para continuar...";
     cin.ignore();
