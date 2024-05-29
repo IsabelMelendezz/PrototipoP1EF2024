@@ -55,7 +55,7 @@ void MedicoCRUD::CrudMedicos() {
     } while (choice != 5);
 }
 
-// Función que valida si ya existe el médico para evitar redundancia de datos
+// Funciï¿½n que valida si ya existe el mï¿½dico para evitar redundancia de datos
 bool MedicoCRUD::ValidarMedico(int codigo) {
     fstream archivo("Medico.dat", ios::binary | ios::in | ios::out);
     if (!archivo) {
@@ -76,7 +76,7 @@ bool MedicoCRUD::ValidarMedico(int codigo) {
     return encontrado;
 }
 
-// Aquí se agregan médicos que son almacenados
+// Aquï¿½ se agregan mï¿½dicos que son almacenados
 void MedicoCRUD::IngresarMedico() {
     string codigoPrograma = "6000";
     system("cls");
@@ -110,7 +110,7 @@ void MedicoCRUD::IngresarMedico() {
     cout << "Gerente agregado exitosamente!" << endl;
 }
 
-// Modificar médicos
+// Modificar mï¿½dicos
 void MedicoCRUD::ModificarMedico() {
     string codigoPrograma = "6000";
     cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
@@ -152,7 +152,7 @@ void MedicoCRUD::ModificarMedico() {
     Auditoria.ingresoBitacora(user, codigoPrograma, "UMED"); // UMED = Update Medico
 
     if (!encontrado) {
-        cout << "No se encontró el Gerente con el codigo ingresado." << endl;
+        cout << "No se encontrï¿½ el Gerente con el codigo ingresado." << endl;
     } else {
         cout << "Gerente modificado exitosamente!" << endl;
     }
@@ -197,14 +197,14 @@ void MedicoCRUD::BorrarMedico() {
     if (eliminado) {
         cout << "Gerente eliminado exitosamente!" << endl;
     } else {
-        cout << "No se encontró el Gerente con el codigo ingresado." << endl;
+        cout << "No se encontrï¿½ el Gerente con el codigo ingresado." << endl;
     }
 }
 
 void MedicoCRUD::DesplegarMedico() {
     system("cls");
     string codigoPrograma = "6000";
-    cout << "-----------------Despliegue de medicos registrados---------------------" << endl;
+    cout << "-----------------Despliegue de Gerentes registrados---------------------" << endl;
     ifstream archivo("Medico.dat", ios::binary);
     if (!archivo) {
         cout << "No hay medicos registrados." << endl;
