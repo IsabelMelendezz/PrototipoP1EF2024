@@ -9,6 +9,7 @@
 #include "usuarios.h"
 using namespace std;
 
+
 struct RegistroBitacora {
 
     char accion[80];
