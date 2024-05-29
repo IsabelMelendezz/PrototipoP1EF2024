@@ -1,0 +1,65 @@
+commit fb4b9ee22df5c78e7810d9acb4614f935acbeae9
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:52:01 2024 -0600
+
+    Agregando cambios
+
+commit 7da316afffdcfdaf4fceaf82bceb17b3581e08d0
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:50:56 2024 -0600
+
+    Arreglando mi bitacora
+
+commit ad9572033139f17a0cffc80e616bbd65eb09fb05
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:48:47 2024 -0600
+
+    Añadiendo mi bitacora personal
+
+commit 8aff1c0d9225f3eb8cb259e1ace2229ce41bf4a3
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:45:45 2024 -0600
+
+    Subiendo bitacora completa
+
+commit e0a4385611202fd5d3b1c4c81e40200315a69279
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:44:36 2024 -0600
+
+    Agregando bitacora
+
+commit e4a25012b92f5235dc95a34ebe8a0aa5c8908d84
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:41:03 2024 -0600
+
+    Agregando las implementaciones
+
+commit 55c558c51ecb273ccbf3ce657fd8491245370bc4
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:37:07 2024 -0600
+
+    Agregando los encabezados de archivo
+
+commit e6faab928593b708e15eeff13698aa96ee5c0ffa
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:33:53 2024 -0600
+
+    Agregando archivos necesarios
+
+commit d1da6b67692032616fb41904c9279f9001638787
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:29:58 2024 -0600
+
+    Añadiendo mas archivos
+
+commit 87bdfcd4c9077c32f92e454a2799a888fe4519a5
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Wed May 29 10:27:03 2024 -0600
+
+    Subiendo parte de los procesos
+
+commit 1bef16344ed9174fe2427d8baa640d31fa64be71
+Author: Isabel Melendez <lmelendezp@miumg.edu.gt>
+Date:   Tue May 28 23:42:50 2024 -0600
+
+    first commit
