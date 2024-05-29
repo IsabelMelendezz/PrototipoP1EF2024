@@ -102,7 +102,7 @@ void entrenador::menu()
         cout << "\n";
         cout << "\t+------------------------------------------+" << endl;
         cout << "\t|\t\t            \t\t   |" << endl;
-        cout << "\t|\t  Catalogo de Entrenadores\t   |" << endl;
+        cout << "\t|\t  Catalogo de Empleados\t   |" << endl;
         cout << "\t|\t\t            \t\t   |" << endl;
         cout << "\t+------------------------------------------+" << endl;
         cout << "\t|\t\t            \t\t   |" << endl;
@@ -323,7 +323,7 @@ void entrenador::modificar()
     archivo.close();
 
     if (!encontrado) {
-        cout << "       -> No se encontró un Empleado con el ID proporcionado." << endl;
+        cout << "       -> No se encontrï¿½ un Empleado con el ID proporcionado." << endl;
         cout << "\n" << endl;
     }
 
